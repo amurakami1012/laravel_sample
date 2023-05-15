@@ -5,6 +5,9 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
+/**
+ * 実行コマンド：./vendor/bin/phpunit tests/Feature/ExampleTest.php
+ */
 class ExampleTest extends TestCase
 {
     /**
