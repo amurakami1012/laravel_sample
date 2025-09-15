@@ -22,4 +22,9 @@ return [
     'problem_management_list'       => '課題管理一覧',
     'problem_management_register'   => '課題管理登録',
 
+    'url_management'            => 'お気に入り管理',
+    'url_management_list'       => 'お気に入り一覧',
+    'url_management_register'              => 'お気に入り登録',
+    'register'   => '登録',
+
 ];

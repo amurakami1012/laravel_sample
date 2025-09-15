@@ -21,3 +21,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/register/url-register', [App\Http\Controllers\Register\UrlMasterContorol::class, 'index'])->name('register.url.register');
+Route::post('/register/url-register/store', [App\Http\Controllers\Register\UrlMasterContorol::class, 'store'])->name('register.url.register.store');
+
+Route::get('/register/url-list', [App\Http\Controllers\Register\UrlMasterListContorol::class, 'index'])->name('register.url.register.list');

@@ -395,12 +395,23 @@ return [
                 [
                     'text' => 'problem_management_list',
                     'url'  => '#',
-                    'icon'        => 'far fa fa-folder',
+                    'icon' => 'far fa fa-folder',
+                ],
+            ],
+        ],
+        [
+            'text'    => 'url_management',
+            'icon'    => 'far fa fa-folder',
+            'submenu' => [
+                [
+                    'text' => 'url_management_list',
+                    'route' => 'register.url.register.list',
                 ],
                 [
-                    'text' => 'problem_management_register',
-                    'url'  => '#',
+                    'text' => 'url_management_register',
+                    'route' => 'register.url.register',
                 ],
+
             ],
         ],
 
