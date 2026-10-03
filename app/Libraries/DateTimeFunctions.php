@@ -2,6 +2,8 @@
 
 namespace App\Libraries;
 
+use Carbon\Carbon;
+
 /**
  * 日付・時刻の共通メソッド
  */
@@ -29,4 +31,14 @@ class DateTimeFunctions
         return date($format);
     }
 
+    /**
+     * 現在時刻の設定(Carbon用)
+     *
+     * @param string $format
+     * @return string
+     */
+    public static function getSystemTimeToCarbon(string $format = 'H:i:s.u'): string
+    {
+        return Carbon::now()->format($format);
+    }
 }
