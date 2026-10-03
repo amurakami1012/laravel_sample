@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Undocumented class
- * 
+ *
  * 実行コマンド：./vendor/bin/phpunit tests/Unit/ExampleTest.php
  */
 class ExampleTest extends TestCase
@@ -18,6 +18,8 @@ class ExampleTest extends TestCase
      */
     public function test_example()
     {
+        $a = 1 / 10;
         $this->assertTrue(true);
+
     }
 }
