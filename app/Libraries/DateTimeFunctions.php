@@ -32,6 +32,17 @@ class DateTimeFunctions
     }
 
     /**
+     * 現在日付の設定(Carbon用)
+     *
+     * @param string $format
+     * @return string
+     */
+    public static function getSystemDateToCarbon(string $format = 'Y/m/d'): string
+    {
+        return Carbon::now()->format($format);
+    }
+
+    /**
      * 現在時刻の設定(Carbon用)
      *
      * @param string $format
